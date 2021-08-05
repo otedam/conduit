@@ -153,7 +153,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         # print(logined_name)
         assert logined_name == "Sign in"
         self.browser.find_elements_by_css_selector("li.nav-item")[1].click()
-        self.browser.find_element_by_css_selector("input[placeholder='Email']").send_keys(fixemail)
+        self.browser.find_element_by_css_selector("input[placeholder='Email']").send_keys("GarFelhasznalo1@gmail.com")
         self.browser.find_element_by_css_selector('input[placeholder="Password"]').send_keys(password)
         # time.sleep(3)
         # self.browser.find_element_by_css_selector('.btn.btn-lg.btn-primary.pull-xs-right').click()
