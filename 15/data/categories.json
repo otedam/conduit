@@ -1,0 +1,39 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "NameError: name 'URL_articles' is not defined",
+      "children" : [ {
+        "name" : "test_writing_data_to_file_009",
+        "uid" : "3bab570c86a47c1c",
+        "parentUid" : "4ec0cdb61065310efd10564e8be78577",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628186751346,
+          "stop" : 1628186753593,
+          "duration" : 2247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_del_article_010",
+        "uid" : "5aa8c2fff3c6b683",
+        "parentUid" : "4ec0cdb61065310efd10564e8be78577",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628186754460,
+          "stop" : 1628186767269,
+          "duration" : 12809
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4ec0cdb61065310efd10564e8be78577"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}

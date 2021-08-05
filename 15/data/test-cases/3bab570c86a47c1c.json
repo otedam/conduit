@@ -1,0 +1,86 @@
+{
+  "uid" : "3bab570c86a47c1c",
+  "name" : "test_writing_data_to_file_009",
+  "fullName" : "test_conduit.test_vizsgaremek.TestConduitApp#test_writing_data_to_file_009",
+  "historyId" : "4230daec26679778329a7c03e0781e36",
+  "time" : {
+    "start" : 1628186751346,
+    "stop" : 1628186753593,
+    "duration" : 2247
+  },
+  "status" : "broken",
+  "statusMessage" : "NameError: name 'URL_articles' is not defined",
+  "statusTrace" : "self = <test_vizsgaremek.TestConduitApp object at 0x7f25869cb610>\n\n    def test_writing_data_to_file_009(self):\n        conduit_login(self.browser)\n>       self.browser.get(URL_articles)\nE       NameError: name 'URL_articles' is not defined\n\ntest_conduit/test_vizsgaremek.py:236: NameError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "NameError: name 'URL_articles' is not defined",
+    "statusTrace" : "self = <test_vizsgaremek.TestConduitApp object at 0x7f25869cb610>\n\n    def test_writing_data_to_file_009(self):\n        conduit_login(self.browser)\n>       self.browser.get(URL_articles)\nE       NameError: name 'URL_articles' is not defined\n\ntest_conduit/test_vizsgaremek.py:236: NameError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "405b2f01bdb4630e",
+      "name" : "log",
+      "source" : "405b2f01bdb4630e.txt",
+      "type" : "text/plain",
+      "size" : 344
+    }, {
+      "uid" : "b3d0f067a5cf8b55",
+      "name" : "stderr",
+      "source" : "b3d0f067a5cf8b55.txt",
+      "type" : "text/plain",
+      "size" : 215
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "test_conduit"
+  }, {
+    "name" : "suite",
+    "value" : "test_vizsgaremek"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConduitApp"
+  }, {
+    "name" : "host",
+    "value" : "fv-az74-744"
+  }, {
+    "name" : "thread",
+    "value" : "3799-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_conduit.test_vizsgaremek"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3bab570c86a47c1c.json",
+  "parameterValues" : [ ]
+}
