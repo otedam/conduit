@@ -25,7 +25,16 @@ from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
 from defs import find_element, conduit_cookie, conduit_login, conduit_add_article
 
+now = datetime.now()
+reg_time = now.strftime("%H%M%S")
+regname = "Gktest" + reg_time
+random_un = str(random.randint(4, 2000))
+new_article_for_file = "article" + random_un
+new_about = "new about" + regname
+post_content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+enter_tag = "tag" + regname
 URL_main = "http://localhost:1667"
+
 
 class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
     def setup(self):  # Minden teszt metodus elott felsetupolja a pytest a driverunket.
@@ -62,7 +71,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
             "GarFelhasznalo1")
         self.browser.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(
             "GarFelhasznalo1@gmail.com")
-        self.browser.find_element_by_xpath("//input[@placeholder='Password']").send_keys(password)
+        self.browser.find_element_by_xpath("//input[@placeholder='Password']").send_keys("Password1")
         # time.sleep(2)
         # self.browser.find_element_by_css_selector(".btn.btn-lg.btn-primary.pull-xs-right").click()
         button_reg = find_element(self.browser, By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.pull-xs-right")
@@ -90,7 +99,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         assert logined_name == "Sign in"
         self.browser.find_elements_by_css_selector("li.nav-item")[1].click()
         self.browser.find_element_by_css_selector("input[placeholder='Email']").send_keys("GarFelhasznalo1@gmail.com")
-        self.browser.find_element_by_css_selector('input[placeholder="Password"]').send_keys(password)
+        self.browser.find_element_by_css_selector('input[placeholder="Password"]').send_keys("Password1")
         # time.sleep(3)
         # self.browser.find_element_by_css_selector('.btn.btn-lg.btn-primary.pull-xs-right').click()
         sign_in_button = find_element(self.browser, By.CSS_SELECTOR, '.btn.btn-lg.btn-primary.pull-xs-right')
