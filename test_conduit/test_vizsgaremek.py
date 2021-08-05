@@ -1,5 +1,5 @@
 # A választott teszt alkalmazásnak legalább az alábbi funkcióit kell lefedni tesztekkel:
-##  Regisztráció +
+#  Regisztráció +
 #  Bejelentkezés +
 #  Adatkezelési nyilatkozat használata +
 #  Adatok listázása ?
@@ -23,75 +23,9 @@ from selenium.webdriver.support.wait import WebDriverWait
 import random
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-
-now = datetime.now()
-reg_time = now.strftime("%H%M%S")
-regname = "Gktest" + reg_time
-email = regname + "@gmail.com"
-# articleGktest1
-random_un = str(random.randint(4, 2000))
-fixname = "Gktest1"
-fixemail = "Gktest1" + "@gmail.com"
-password = "Password1"
-new_post1 = "something"
-new_article = "article" + fixname
-new_article_for_file = "article" + random_un
-new_about = "new about" + regname
-post_content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
-enter_tag = "tag" + regname
+from defs import find_element, conduit_cookie, conduit_login, conduit_add_article
 
 URL_main = "http://localhost:1667"
-# URL_editor = "http://localhost:1667/#/editor"
-URL_articles = "http://localhost:1667/#/articles/" + new_article_for_file
-
-
-def find_element(driver, search_type, value):
-    element = WebDriverWait(
-        driver, 10).until(
-        EC.visibility_of_element_located((search_type, value))
-    )
-    return element
-
-
-def conduit_cookie(browser):  # Cookie accepting
-    cookie = browser.find_element_by_xpath(
-        '//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
-    cookie.click()
-
-
-def conduit_login(browser):
-    browser.find_elements_by_css_selector("li.nav-item")[1].click()
-    # browser.find_element_by_css_selector("input[placeholder='Email']").send_keys(email)
-    browser.find_element_by_css_selector("input[placeholder='Email']").send_keys("GarFelhasznalo1@gmail.com")
-    browser.find_element_by_css_selector('input[placeholder="Password"]').send_keys(password)
-    browser.find_element_by_css_selector('.btn.btn-lg.btn-primary.pull-xs-right').click()
-    time.sleep(2)
-
-
-# def conduit_registration(browser):
-#     browser.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
-#     browser.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys("TesztUserGar")
-#     browser.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(fixemail)
-#     browser.find_element_by_xpath("//input[@placeholder='Password']").send_keys(password)
-#     button_reg = find_element(browser, By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.pull-xs-right")
-#     button_reg.click()
-
-
-def conduit_add_article(browser):
-    time.sleep(3)
-    browser.find_element_by_css_selector('a[href="#/editor"]').click()
-    time.sleep(3)
-    article_title = find_element(browser, By.CSS_SELECTOR, 'input[placeholder="Article Title"]')
-    article_title.send_keys(new_article_for_file)
-    # browser.find_element_by_css_selector('input[placeholder="Article Title"]').send_keys(new_article_for_file)
-    browser.find_element_by_css_selector('input[placeholder="What\'s this article about?"]').send_keys(
-        new_about)
-    browser.find_element_by_css_selector('textarea[placeholder="Write your article (in markdown)"]').send_keys(
-        post_content)
-    browser.find_element_by_css_selector('input[placeholder="Enter tags"]').send_keys(enter_tag + Keys.TAB)
-    browser.find_element_by_css_selector('button[type="submit"]').click()
-    time.sleep(2)
-
 
 class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
     def setup(self):  # Minden teszt metodus elott felsetupolja a pytest a driverunket.
@@ -124,8 +58,10 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
     def test_register_003(self):
         conduit_cookie(self.browser)
         self.browser.find_element_by_xpath("/html/body//a[contains(@href,'register')]").click()
-        self.browser.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys("GarFelhasznalo1")
-        self.browser.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys("GarFelhasznalo1@gmail.com")
+        self.browser.find_element_by_xpath("//input[@type='text'][@placeholder='Username']").send_keys(
+            "GarFelhasznalo1")
+        self.browser.find_element_by_xpath("//input[@type='text'][@placeholder='Email']").send_keys(
+            "GarFelhasznalo1@gmail.com")
         self.browser.find_element_by_xpath("//input[@placeholder='Password']").send_keys(password)
         # time.sleep(2)
         # self.browser.find_element_by_css_selector(".btn.btn-lg.btn-primary.pull-xs-right").click()
