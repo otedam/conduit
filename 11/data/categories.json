@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'GarFelhasznalo1' == 'Gktest1@gmail.com'\n  - Gktest1@gmail.com\n  + GarFelhasznalo1",
+      "children" : [ {
+        "name" : "test_navigate_to_login_004",
+        "uid" : "2f36c7c00162c7dd",
+        "parentUid" : "9117a6131dba8fdc3a6c29a7c7d971a1",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628177070012,
+          "stop" : 1628177072367,
+          "duration" : 2355
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9117a6131dba8fdc3a6c29a7c7d971a1"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
