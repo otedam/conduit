@@ -1,0 +1,152 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "children" : [ {
+    "name" : "test_conduit.test_vizsgaremek",
+    "children" : [ {
+      "name" : "test_cookie_001",
+      "uid" : "8f9d962ec2d37311",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628174454655,
+        "stop" : 1628174454817,
+        "duration" : 162
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_home_page_appearance_002",
+      "uid" : "4ea717b411069a3f",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628174456904,
+        "stop" : 1628174456908,
+        "duration" : 4
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_register_003",
+      "uid" : "c8a6039cb4a1b7d0",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628174458830,
+        "stop" : 1628174462192,
+        "duration" : 3362
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_navigate_to_login_004",
+      "uid" : "626c60c2a8dc48e4",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174464116,
+        "stop" : 1628174466573,
+        "duration" : 2457
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_adding_new_article_005",
+      "uid" : "aa7dadcc09b20317",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174468519,
+        "stop" : 1628174469004,
+        "duration" : 485
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_edit_settings_006",
+      "uid" : "708b45b11b881cf8",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174470968,
+        "stop" : 1628174471391,
+        "duration" : 423
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_pagination_007",
+      "uid" : "7aa5a02f404d519a",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628174473330,
+        "stop" : 1628174473392,
+        "duration" : 62
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_adding_data_from_file_008",
+      "uid" : "276f16a230d50bfc",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174475301,
+        "stop" : 1628174475744,
+        "duration" : 443
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_writing_data_to_file_009",
+      "uid" : "c5b8338194018581",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "passed",
+      "time" : {
+        "start" : 1628174476700,
+        "stop" : 1628174479183,
+        "duration" : 2483
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_del_article_010",
+      "uid" : "738abc2cbed301c0",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174481092,
+        "stop" : 1628174481532,
+        "duration" : 440
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "test_logout_011",
+      "uid" : "74a3d6950eecdca5",
+      "parentUid" : "2220f44f2e4034fcff765a11c96c2ae0",
+      "status" : "broken",
+      "time" : {
+        "start" : 1628174482520,
+        "stop" : 1628174484927,
+        "duration" : 2407
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "test_conduit.test_vizsgaremek"
+  } ],
+  "name" : "packages"
+}

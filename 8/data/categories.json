@@ -1,0 +1,99 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "test_navigate_to_login_004",
+        "uid" : "626c60c2a8dc48e4",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174464116,
+          "stop" : 1628174466573,
+          "duration" : 2457
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_logout_011",
+        "uid" : "74a3d6950eecdca5",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174482520,
+          "stop" : 1628174484927,
+          "duration" : 2407
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[href=\"#/editor\"]\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_adding_new_article_005",
+        "uid" : "aa7dadcc09b20317",
+        "parentUid" : "4bcccdea43abef176d134b73c6651c70",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174468519,
+          "stop" : 1628174469004,
+          "duration" : 485
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_adding_data_from_file_008",
+        "uid" : "276f16a230d50bfc",
+        "parentUid" : "4bcccdea43abef176d134b73c6651c70",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174475301,
+          "stop" : 1628174475744,
+          "duration" : 443
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_del_article_010",
+        "uid" : "738abc2cbed301c0",
+        "parentUid" : "4bcccdea43abef176d134b73c6651c70",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174481092,
+          "stop" : 1628174481532,
+          "duration" : 440
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4bcccdea43abef176d134b73c6651c70"
+    }, {
+      "name" : "selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {\"method\":\"css selector\",\"selector\":\"a[href=\"#/settings\"]\"}\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_settings_006",
+        "uid" : "708b45b11b881cf8",
+        "parentUid" : "9ce728f1c5c809d4bec7af4a800b3af8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628174470968,
+          "stop" : 1628174471391,
+          "duration" : 423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "9ce728f1c5c809d4bec7af4a800b3af8"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
