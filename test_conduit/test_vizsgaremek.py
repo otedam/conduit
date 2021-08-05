@@ -78,8 +78,9 @@ def conduit_login(browser):
 
 
 def conduit_add_article(browser):
+    time.sleep(3)
     browser.find_element_by_css_selector('a[href="#/editor"]').click()
-    # time.sleep(1)
+    time.sleep(3)
     article_title = find_element(browser, By.CSS_SELECTOR, 'input[placeholder="Article Title"]')
     article_title.send_keys(new_article_for_file)
     # browser.find_element_by_css_selector('input[placeholder="Article Title"]').send_keys(new_article_for_file)
@@ -143,7 +144,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         nav_bar_list = self.browser.find_elements_by_css_selector("li.nav-item")
         logined_name = nav_bar_list[3].text
         # print(logined_name)
-        assert logined_name == regname
+        assert logined_name == "GarFelhasznalo1"
 
     def test_navigate_to_login_004(self):
         conduit_cookie(self.browser)
