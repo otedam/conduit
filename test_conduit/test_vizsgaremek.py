@@ -164,7 +164,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         # nav_link_list = find_element(self.browser, By.CSS_SELECTOR, 'nav-link')
         signed_in_name = nav_link_list[3].text
         # print(signed_in_name)
-        assert signed_in_name == fixemail
+        assert signed_in_name == "GarFelhasznalo1@gmail.com"
 
     def test_adding_new_article_005(self):
         conduit_cookie(self.browser)
