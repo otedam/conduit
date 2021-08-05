@@ -87,7 +87,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         self.browser = webdriver.Chrome(ChromeDriverManager().install(), options=self.browser_options)
 
         # self.browser = webdriver.Chrome("C://chromedriver.exe")
-        # self.browser.get(URL_main)
+        self.browser.get(URL_main)
         self.browser.maximize_window()
 
     def teardown(self):  # Minden teszt utan bezarja a dolgainkat.
@@ -104,7 +104,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
     def test_home_page_appearance_002(
             self):  # A fenti setup metodussal megnyitjuk a honlapot majd checkoljuk a title-ját a honlapnak
         conduit = self.browser.title
-        print(conduit)
+        # print(conduit)
         assert conduit == "Conduit"
 
     def test_register_003(self):
@@ -124,19 +124,19 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         #     EC.visibility_of_element_located((By.CSS_SELECTOR, ".swal-title"))
         # )
         welcome_text = welcome.text
-        print(welcome_text)
+        # print(welcome_text)
         assert welcome_text == "Welcome!"
         self.browser.find_element_by_css_selector(".swal-button.swal-button--confirm").click()
         nav_bar_list = self.browser.find_elements_by_css_selector("li.nav-item")
         logined_name = nav_bar_list[3].text
-        print(logined_name)
+        # print(logined_name)
         assert logined_name == regname
 
     def test_navigate_to_login_004(self):
         conduit_cookie(self.browser)
         nav_bar_list = self.browser.find_elements_by_css_selector("li.nav-item")
         logined_name = nav_bar_list[1].text
-        print(logined_name)
+        # print(logined_name)
         assert logined_name == "Sign in"
         self.browser.find_elements_by_css_selector("li.nav-item")[1].click()
         self.browser.find_element_by_css_selector("input[placeholder='Email']").send_keys(fixemail)
@@ -149,11 +149,10 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         nav_link_list = self.browser.find_elements_by_class_name('nav-link')
         # nav_link_list = find_element(self.browser, By.CSS_SELECTOR, 'nav-link')
         signed_in_name = nav_link_list[3].text
-        print(signed_in_name)
+        # print(signed_in_name)
         assert signed_in_name == fixemail
 
     def test_adding_new_article_005(self):
-        print("5.")
         conduit_cookie(self.browser)
         conduit_navigate_to_login(self.browser)
         # self.browser.find_element_by_css_selector('a.nav-link.router-link-exact-active.active').click()
@@ -283,7 +282,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         with open("adat_kiir.txt", "w") as file_ki:
             for idx, val in enumerate(just_comment):
                 val1 = val.text + "\n"
-                print(val1)
+                # print(val1)
                 file_ki.write(val1)
 
     def test_del_article_010(self):
@@ -305,7 +304,7 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         nav_link_list[4].click()
         nav_bar_list = self.browser.find_elements_by_css_selector("li.nav-item")
         without_logined_name = nav_bar_list[1].text
-        print(without_logined_name)
+        # print(without_logined_name)
         assert without_logined_name == "Sign in"
 
 # A testet a terminalbol a:  python -m pytest parancsal inditjuk
