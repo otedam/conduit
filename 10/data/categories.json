@@ -1,0 +1,43 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "IndexError: list index out of range",
+      "children" : [ {
+        "name" : "test_navigate_to_login_004",
+        "uid" : "437a9dbd37d49973",
+        "parentUid" : "cbf21ee610ffd376e0ce643a364ade80",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628175758286,
+          "stop" : 1628175760588,
+          "duration" : 2302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "cbf21ee610ffd376e0ce643a364ade80"
+    }, {
+      "name" : "FileNotFoundError: [Errno 2] No such file or directory: 'adat.txt'",
+      "children" : [ {
+        "name" : "test_adding_data_from_file_008",
+        "uid" : "e821c6b47e680a61",
+        "parentUid" : "4de7f1076846be8cd495f17ddab68e36",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628175780044,
+          "stop" : 1628175790848,
+          "duration" : 10804
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4de7f1076846be8cd495f17ddab68e36"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
