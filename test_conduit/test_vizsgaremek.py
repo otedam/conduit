@@ -34,7 +34,7 @@ new_about = "new about" + regname
 post_content = "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
 enter_tag = "tag" + regname
 URL_main = "http://localhost:1667"
-
+URL_articles = "http://localhost:1667/#/articles/" + new_article_for_file
 
 class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
     def setup(self):  # Minden teszt metodus elott felsetupolja a pytest a driverunket.
