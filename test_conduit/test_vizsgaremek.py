@@ -13,7 +13,7 @@
 from datetime import datetime
 import time
 
-import self as self
+# import self as self
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -94,12 +94,12 @@ class TestConduitApp(object):  # A classnak a Test szoval kell kezdodnie.
         self.browser.quit()
 
     def test_cookie_001(self):  # Cookie accepting
-        cookie = self.browser.find_element_by_xpath(
-            '//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
-        try:  # kihagynam a try exceptet false pozitiv
-            cookie.click()
-        except:
-            print("cookie clicked")
+        # cookie = self.browser.find_element_by_xpath(
+     #       '//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
+        cookie = find_element(self.browser, By.XPATH, '//button[@class="cookie__bar__buttons__button cookie__bar__buttons__button--accept"]')
+        cookie.click()
+            # except:
+              #  print("cookie clicked")
 
     def test_home_page_appearance_002(
             self):  # A fenti setup metodussal megnyitjuk a honlapot majd checkoljuk a title-ját a honlapnak
