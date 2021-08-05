@@ -1,0 +1,47 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'GarFelhasznalo1' == 'GarFelhasznalo1@gmail.com'\n  - GarFelhasznalo1@gmail.com\n  ?                ----------\n  + GarFelhasznalo1",
+      "children" : [ {
+        "name" : "test_navigate_to_login_004",
+        "uid" : "ab90676a843eb994",
+        "parentUid" : "fb9c95a3087f7cbc614eac88ca54930e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628177613853,
+          "stop" : 1628177616193,
+          "duration" : 2340
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fb9c95a3087f7cbc614eac88ca54930e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  }, {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <li class=\"nav-item\">...</li> is not clickable at point (598, 18). Other element would receive the click: <div class=\"swal-overlay swal-overlay--show-modal\" tabindex=\"-1\">...</div>\n  (Session info: headless chrome=92.0.4515.131)",
+      "children" : [ {
+        "name" : "test_edit_settings_006",
+        "uid" : "32a46576c3f40481",
+        "parentUid" : "6c3ace7f9facda14142a6a793bec9d0a",
+        "status" : "broken",
+        "time" : {
+          "start" : 1628177623727,
+          "stop" : 1628177631930,
+          "duration" : 8203
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6c3ace7f9facda14142a6a793bec9d0a"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
