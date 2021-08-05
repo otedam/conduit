@@ -1,5 +1,5 @@
 # A választott teszt alkalmazásnak legalább az alábbi funkcióit kell lefedni tesztekkel:
-#  Regisztráció +
+##  Regisztráció +
 #  Bejelentkezés +
 #  Adatkezelési nyilatkozat használata +
 #  Adatok listázása ?
