@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: assert 'Global Feed' == 'GarFelhasznalo1'\n  - GarFelhasznalo1\n  + Global Feed",
+      "children" : [ {
+        "name" : "test_register_003",
+        "uid" : "c51a456c4252ee26",
+        "parentUid" : "3e994cba14fc3808a7d1a167a715ff24",
+        "status" : "failed",
+        "time" : {
+          "start" : 1628837368025,
+          "stop" : 1628837370977,
+          "duration" : 2952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "3e994cba14fc3808a7d1a167a715ff24"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
+  "name" : "categories"
+}
