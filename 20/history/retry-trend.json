@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 20,
-  "reportUrl" : "https://otedam.github.io/conduit/20/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 11,
-    "retry" : 0
-  }
-} ]
