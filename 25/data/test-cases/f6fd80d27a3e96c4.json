@@ -1,12 +1,12 @@
 {
-  "uid" : "7171adb42f1f1a99",
-  "name" : "test_logout_011",
-  "fullName" : "test_conduit.test_vizsgaremek.TestConduitApp#test_logout_011",
-  "historyId" : "e28c1468fee7db2b1238fc210a2b9675",
+  "uid" : "f6fd80d27a3e96c4",
+  "name" : "test_cookie_001",
+  "fullName" : "test_conduit.test_vizsgaremek.TestConduitApp#test_cookie_001",
+  "historyId" : "2c2b94ef2891f575c21cf5d9183ffbc0",
   "time" : {
-    "start" : 1628841830709,
-    "stop" : 1628841835101,
-    "duration" : 4392
+    "start" : 1629917049516,
+    "stop" : 1629917049570,
+    "duration" : 54
   },
   "status" : "passed",
   "flaky" : false,
@@ -16,17 +16,17 @@
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ {
-      "uid" : "b33ff9bdc5493fb4",
+      "uid" : "2655713b328f962a",
       "name" : "log",
-      "source" : "b33ff9bdc5493fb4.txt",
+      "source" : "2655713b328f962a.txt",
       "type" : "text/plain",
-      "size" : 344
+      "size" : 642
     }, {
-      "uid" : "527ecf555cff2a41",
+      "uid" : "aa76395dccdc7c7c",
       "name" : "stderr",
-      "source" : "527ecf555cff2a41.txt",
+      "source" : "aa76395dccdc7c7c.txt",
       "type" : "text/plain",
-      "size" : 215
+      "size" : 435
     } ],
     "parameters" : [ ],
     "stepsCount" : 0,
@@ -46,10 +46,10 @@
     "value" : "TestConduitApp"
   }, {
     "name" : "host",
-    "value" : "fv-az77-942"
+    "value" : "fv-az33-712"
   }, {
     "name" : "thread",
-    "value" : "3704-MainThread"
+    "value" : "4110-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -73,6 +73,6 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7171adb42f1f1a99.json",
+  "source" : "f6fd80d27a3e96c4.json",
   "parameterValues" : [ ]
 }
